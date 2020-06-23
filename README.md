@@ -1,3 +1,8 @@
+增加build.sh 用于适配 Android NDK 
+执行脚本会编译不过，需修改src/Makefile 中的编译选项，将-pg相关选项全部删掉
+修改iperf_api.c 内默认的 data目录，Android 下无/tmp目录
+增加release 目录编译完成的iperf3 可以正常使用
+
 iperf3:  A TCP, UDP, and SCTP network bandwidth measurement tool
 ================================================================
 
